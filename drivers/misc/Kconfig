@@ -526,6 +526,13 @@ config PCI_ENDPOINT_TEST
            Enable this configuration option to enable the host side test driver
            for PCI Endpoint.
 
+config NEXION_STATION_PM
+	tristate "Nexion Station Power management driver"
+	depends on OF
+	default n
+	help
+	  Implements Nexion Station custom behaviors controlling gpios and more
+
 source "drivers/misc/c2port/Kconfig"
 source "drivers/misc/eeprom/Kconfig"
 source "drivers/misc/cb710/Kconfig"
