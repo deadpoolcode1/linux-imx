@@ -164,8 +164,15 @@
 
 &iomuxc {
 	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_hog>;
 
 	imx8m-var-dart {
+
+		pinctrl_hog: hoggrp {
+			fsl,pins = <
+				/*NEXION GPIO definitions */ 
+			>;
+		};
 
 		pinctrl_csi1: csi1grp {
 			fsl,pins = <
