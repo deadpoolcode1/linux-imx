@@ -410,7 +410,6 @@
 
 		pinctrl_rtc: rtcgrp {
 			fsl,pins = <
-				MX8MM_IOMUXC_GPIO1_IO15_GPIO1_IO15		0x1c1
 			>;
 		};
 
